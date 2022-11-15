@@ -48,7 +48,9 @@
        url('../fonts/montserrat-v25-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* Global values */
 html {
+  font-family: 'Montserrat', sans-serif;
   font-size: 62.5%
 }
 
@@ -57,37 +59,36 @@ html {
   padding: 0;
 }
 
-
-body {
-  font-family: 'Montserrat', sans-serif;
-}
-
 footer {
   line-height: 1.6;
 }
 
+.section {
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+/* Header setup */
 .header {
   max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: 3.5rem;
+  margin: 0 3.5rem;
   padding: 0.5rem;
   font-size: 1.5rem;
   font-weight: 500;
-  font-family: Montserrat;
 }
 
 .header_titleLogo {
   width: 125px;
-  margin-left: 3.5rem;
 }
 
-.header_nav ul {
-  margin-right: 2.5rem;
+/* .header_nav ul {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+*/
 
 .header_nav li {
   list-style: none;
@@ -101,45 +102,34 @@ footer {
   text-decoration: none;
 }
 
-.home_banner {
-  width: 100%;
-  position: relative;
-  display: inline-block;
-}
+/* End Header setup */
 
-.home__image {
-  margin: auto;
+/* Banner setup */
+.banner__images {
   width: 100%;
 }
 
-.home__image-title {
+.banner__images-title {
   text-align: center;
-  position: absolute;
   font-size: 4.2rem;
+}
+/* End Banner setup */
+
+/* Home Page setup */
+.home__image {
+  height: 640px;
+  width: 100%;
+  margin: auto;
 }
 
 .home__button {
-  text-align: center;
-  position: relative;
   display: grid;
-  align-items: center;
   padding: 1rem;
   margin: 2rem auto;
 }
 
 .home__button a {
-  text-align: center;
   text-decoration: none;
-}
-
-.secondary__image {
-  width: 100%;
-}
-
-.secondary__image-title {
-  text-align: center;
-  position: relative;
-  font-size: 4.2rem;
 }
 
 .home__news {
@@ -147,18 +137,20 @@ footer {
   padding: 2.5rem;
 }
 
+.home__news-title {
+  font-size: 3.5rem;
+}
+
 .home__news-preview {
-  display: flex;
+  /*
   margin: auto;
   text-align: justify;
   position: relative;
   align-items: center;
+  */
+  display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-}
-
-.home__news-title {
-  font-size: 3.5rem;
 }
 
 .home__news-preview p {
@@ -166,32 +158,35 @@ footer {
   padding: 2.5rem;
   font-size: 2.0rem;
 }
+/* End Page setup */
 
+/* Services page Setup */
 .services__section {
-  margin: 0.5rem;
 }
 
 .services__section-div {
+  max-width: 85%;
   justify-content: space-around;
-  padding: 5rem;
-  margin: 5rem;
+  margin: 1rem auto;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .services__section-img {
-  max-width: 85%;
   margin: auto;
   height: auto;
 }
 
-.services__section-text {
+.services__section-text p {
   display: block;
+  font-size: 2rem;
+  width: 60rem;
   margin: 5rem;
   padding: 5rem;
   text-align: justify;
 }
+/* Services page Setup End*/
 
+/* Content page Setup */
 .content__block {
   display: flex;
   justify-content: space-around;
@@ -200,7 +195,6 @@ footer {
 
 .content__block-notes {
   padding: 15rem;
-  margin: auto;
 }
 
 .content__block-title {
@@ -210,16 +204,14 @@ footer {
 .content__block-text {
   font-size: 1.5rem;
 }
+/* Content page Setup End*/
 
+/* Who page Setup*/
 .who__history {
-  display: grid;
-  padding: 5rem;
-  margin: auto;
 }
 
 .who__history-title {
   padding: 3rem 0;
-  margin: 2rem 0;
   font-size: 3.4rem;
   text-align: center;
 }
@@ -236,8 +228,7 @@ footer {
 }
 
 .who__staff-title {
-  padding: 3rem 0;
-  margin: 2rem 0;
+  padding-bottom: 4rem;
   font-size: 3.6rem;
   text-align: left;
 }
@@ -245,7 +236,6 @@ footer {
 .who__staff-block {
   display: flex;
   flex-wrap: wrap;
-  font-size: 2rem;
 }
 
 .who__staff-staff {
@@ -253,19 +243,12 @@ footer {
 }
 
 .who__staff-staff-title {
-  margin: auto;
   font-size: 4rem;
   padding: 2rem;
 }
 
 .who__staff-staff-text {
-  margin: auto;
   font-size: 3rem;
-  padding: 0 2rem 2rem;
-}
-
-.who__staff-staff-social {
-  margin: auto;
   padding: 0 2rem 2rem;
 }
 
@@ -277,43 +260,30 @@ footer {
 .sponsors__block-image {
   margin: auto;
   padding: 0 2rem 2rem;
-  font-size: 3rem;
 }
-
-.section {
-  max-width: 85%;
-  margin: 10rem auto;
-  padding: 5rem 0;
-}
-
-/*
-.section__contact {
-  margin-top: 50px;
-}
-*/
+/* Who page Setup End*/
 
 .contact__us {
   font-size: 2.4rem;
+}
+
+.contact__us-organization {
   text-align: center;
   padding: 5rem 0;
 }
 
 .contact__us-text {
   font-size: 1.8rem;
-  width: 100%;
-  text-align: center;
-  padding: 5rem 0;
 }
 
 .contact__us-locations {
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
 }
 
 .contact__us-locations-text {
-  display: inline-block;
-  margin: 5rem auto;
+  display: grid;
+  margin: auto;
 }
 
 .contact__us-locations-block {
@@ -330,12 +300,10 @@ footer {
 }
 
 .contact__us-locations-map {
-  align-items: center;
   margin: auto;
   position: relative;
-  text-align: justify;
-  display: grid;
 }
+
 #contact h3 {
   margin-bottom: 2.5rem;
 }
@@ -347,8 +315,6 @@ footer {
   width: 400px;
   margin: auto;
   padding: 5rem;
-  text-align: justify;
-  position: relative;
   align-items: center;
   font-size: 1.6rem;
 }
@@ -396,7 +362,7 @@ footer {
 
 .contact_names {
   display: flex;
-  margin-left: 0;
+  justify-content: space-between;
 }
 
 .footer__contact {
@@ -421,12 +387,7 @@ footer {
   display: flex;
 }
 
-.footer__text-title {
-  padding: 0.5rem 1rem;
-  margin: 0.5rem 1rem;
-}
-
-.footer__text-list {
+.footer__text-size {
   padding: 0.5rem 1rem;
   margin: 0.5rem 1rem;
 }
@@ -468,7 +429,6 @@ footer {
 
 .section__footer-social {
   display: flex;
-  justify-content: space-between;
   margin: 0.5rem 3.5rem 3.5rem;
   padding: 0.5rem;
   flex-direction: row-reverse;
@@ -476,20 +436,13 @@ footer {
 }
 
 .section__footer-social ul {
-  text-align: right;
   list-style: none;
-  justify-content: center;
   display: flex;
 }
 
 .section__footer-social li {
   margin: auto;
-  list-style: none;
   padding: 1rem;
-}
-
-.section__footer-social p {
-  text-align: center;
 }
 
 .social__logo img {
