@@ -403,14 +403,25 @@ body {
   margin-bottom: 2.5rem;
 }
 
+@media screen and (max-width: 512px) {
+  .contact {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 513px) {
+  .contact {
+    width: 400px;
+    font-size: 1.6rem;
+  }
+}
+
 .contact {
   display: grid;
   border: solid 0.1rem #21768A;
-  width: 400px;
   margin: auto;
   padding: 5rem;
   align-items: center;
-  font-size: 1.6rem;
   box-sizing: unset;
 }
 
@@ -476,6 +487,10 @@ body {
   .footer__logo-img {
     width: 80px;
   }
+
+  .footer__button-button {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (min-width: 513px) {
@@ -486,6 +501,10 @@ body {
 
   .footer__logo-img {
     width: 108px;
+  }
+
+  .footer__button-button {
+    font-size: 1.5rem;
   }
 }
 
@@ -505,9 +524,20 @@ body {
   display: flex;
 }
 
+@media screen and (max-width: 512px) {
+  .footer__text-size {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 513px) {
+  .footer__text-size {
+    margin: 0.5rem 1rem;
+  }
+}
+
 .footer__text-size {
   padding: 0.5rem 1rem;
-  margin: 0.5rem 1rem;
 }
 
 
@@ -522,7 +552,6 @@ body {
   align-items: center;
   padding: 0.5rem;
   margin: auto;
-  font-size: 1.5rem;
 }
 
 .footer__button-button {
@@ -533,7 +562,6 @@ body {
   text-decoration: none;
   margin: auto 1rem;
   padding: 1.2rem 2.5rem;
-  font-size: 1.5rem;
 }
 
 
