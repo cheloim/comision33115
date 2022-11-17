@@ -68,11 +68,28 @@ footer {
   padding: 5rem 2rem;
 }
 
-@media screen and (min-width: 768px) {
-    .body {
-            background-color: #000000;
-      }
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 
+@media screen and (min-width: 768px) {
+  .home__news-preview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner__images {}
+
+  .home__image {
+    width: 100%;
+    margin: auto;
+    height: 640px;
+  }
+}
 
 /* Header setup */
 .header {
@@ -112,30 +129,53 @@ footer {
 
 /* Banner setup */
 .banner__images {
+  position: relative;
   width: 100%;
 }
 
 .banner__images-title {
+  color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 70%;
+  text-align: center;
+  font-size: 4.2rem;
+}
+
+.banner__images-secondary-title {
   text-align: center;
   font-size: 4.2rem;
 }
 /* End Banner setup */
 
 /* Home Page setup */
-.home__image {
-  height: 640px;
-  width: 100%;
-  margin: auto;
+@media screen and (max-width: 768px){
+  .home__image {
+    height: 320px;
+    width: 100%;
+    margin: auto;
+  }
 }
 
 .home__button {
-  display: grid;
-  padding: 1rem;
-  margin: 2rem auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 85%;
+  border: #21768A solid 2px;
+  border-radius: 8px;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  margin: auto 1rem;
+  padding: 1.2rem 2.5rem;
+  font-size: 1.5rem;
 }
 
 .home__button a {
   text-decoration: none;
+  color: white;
 }
 
 .home__news {
@@ -148,7 +188,6 @@ footer {
 }
 
 .home__news-preview {
-  /*
   margin: auto;
   text-align: justify;
   position: relative;
@@ -156,13 +195,8 @@ footer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  /*
   */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 15rem;
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
 }
 
 .home__news-preview p {
