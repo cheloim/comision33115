@@ -485,6 +485,11 @@ body {
     display: block;
   }
 
+  #myLinks {
+    flex-direction: row;
+    position: absolute
+  }
+
   .header_nav #myLinks {
     display: none;
   }
