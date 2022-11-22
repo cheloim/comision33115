@@ -76,13 +76,28 @@ body {
 /* Header setup */
 .header {
   max-width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin: 0 3.5rem;
   padding: 0.5rem;
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+.header_nav {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+#myLinks {
+  position: absolute;
+  right: 0;
+}
+
+.header_nav a.icon {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .header_nav li {
@@ -451,6 +466,38 @@ body {
 @media screen and (max-width: 512px) {
   .header_titleLogo {
     max-width: 75px;
+  }
+
+  .header_nav {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .header_nav #myLinks {
+    display: none;
+  }
+
+  .header_nav a {
+    color: #78C2E9;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .header_nav #myLinks {
+    display: none;
+  }
+
+  .header_nav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .header_nav a:hover {
+    font-weight: bolder;
   }
 
   .contact__us-locations-map iframe {
