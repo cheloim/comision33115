@@ -1,0 +1,35 @@
+@media screen and (max-width: 512px) {
+  .header_titleLogo {
+    max-width: 75px;
+  }
+
+  .header_nav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .contact__us-locations-map iframe {
+    max-width: 400px;
+  }
+
+  .contact {
+    font-size: 1.2rem;
+  }
+  .section__footer-block {
+    font-size: 1rem;
+  }
+
+  .footer__logo-img {
+    width: 80px;
+  }
+
+  .footer__button-button {
+    font-size: 1.2rem;
+  }
+
+  .footer__text-size {
+    margin-left: 0;
+  }
+}

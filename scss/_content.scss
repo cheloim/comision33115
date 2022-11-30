@@ -1,0 +1,17 @@
+.content__block {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.content__block-notes {
+  padding: 15rem;
+}
+
+.content__block-title {
+  font-size: 2.5rem;
+}
+
+.content__block-text {
+  font-size: 1.5rem;
+}

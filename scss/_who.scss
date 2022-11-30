@@ -1,0 +1,51 @@
+.who__history-title {
+  padding: 3rem 0;
+  font-size: 3.4rem;
+  text-align: center;
+}
+
+.who__history-text p {
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+.who__staff {
+  padding: 3rem 10rem;
+}
+
+.who__staff-title {
+  padding-bottom: 4rem;
+  font-size: 3.6rem;
+  text-align: left;
+}
+
+.who__staff-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.who__staff-staff {
+  margin: auto;
+}
+
+.who__staff-staff-title {
+  font-size: 4rem;
+  padding: 2rem;
+}
+
+.who__staff-staff-text {
+  font-size: 3rem;
+  padding: 0 2rem 2rem;
+}
+
+.sponsors__block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sponsors__block-image {
+  margin: auto;
+  padding: 0 2rem 2rem;
+}

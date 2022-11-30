@@ -1,0 +1,25 @@
+@media screen and (max-width: 820px) {
+  .header_nav {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .header_nav #myLinks {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    align-items: start;
+  }
+
+  .header_nav a {
+    color: #78C2E9;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .header_nav a:hover {
+    font-weight: bolder;
+  }
+}

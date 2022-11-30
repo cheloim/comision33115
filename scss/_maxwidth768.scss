@@ -1,0 +1,42 @@
+@media screen and (max-width: 768px){
+  .banner__images-title {
+    top: 50%;
+  }
+
+  .home__image {
+    height: 320px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .home__news-preview {
+    margin: auto;
+    text-align: justify;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /*
+    */
+  }
+
+  .services__section {
+  }
+
+  .services__section-div {
+    display: block;
+  }
+
+  .services__section-text p {
+    font-size: 1.5rem;
+    text-align: center;
+    display: grid;
+    align-items: center;
+  }
+
+  .services__section-img {
+    display: grid;
+    align-items: center;
+  }
+}

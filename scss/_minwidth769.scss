@@ -1,0 +1,36 @@
+@media screen and (min-width: 768px) {
+  #myLinks {
+    display: flex;
+    position: absolute;
+    right: 0;
+  }
+
+  .home__news-preview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner__images {}
+
+  .home__image {
+    width: 100%;
+    margin: auto;
+    height: 640px;
+  }
+
+  .banner__images-title {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 70%;
+  }
+
+  .services__section-div {
+    display: flex;
+    justify-content: space-around;
+  }
+}
