@@ -262,7 +262,7 @@ a {
 
 .contact_form,
 .contact__form-button {
-  margin: 1rem;
+  margin: 1rem 2rem;
 }
 .contact_form button,
 .contact__form-button button {
@@ -395,6 +395,10 @@ a {
   }
   .contact {
     font-size: 1.2rem;
+    padding: 5rem 1rem;
+  }
+  .contact_names {
+    margin: 1rem 2rem;
   }
   .section__footer-block {
     font-size: 1rem;
