@@ -1,8 +1,8 @@
 .section__footer-block,
 .footer__text {
+  @extend .footer__text-size;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem;
 }
 
 .footer__text-size {

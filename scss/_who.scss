@@ -21,7 +21,8 @@
   text-align: left;
 }
 
-.who__staff-block {
+.who__staff-block,
+.sponsors__block {
   display: flex;
   flex-wrap: wrap;
 }
@@ -40,12 +41,7 @@
   padding: 0 2rem 2rem;
 }
 
-.sponsors__block {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .sponsors__block-image {
-  margin: auto;
+  @extend .who__staff-staff;
   padding: 0 2rem 2rem;
 }
