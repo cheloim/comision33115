@@ -7,28 +7,23 @@
   border-radius: 8px;
   background-color: transparent;
   text-align: center;
-  text-decoration: none;
   margin: auto 1rem;
   padding: 1.2rem 2.5rem;
   font-size: 1.5rem;
 }
 
 .home__button a {
-  text-decoration: none;
   color: white;
 }
 
-.home__news {
+.home__news,
+.home__news-preview p{
   margin: 2.5rem;
   padding: 2.5rem;
+  font-size: 2.0rem;
 }
 
 .home__news-title {
   font-size: 3.5rem;
 }
 
-.home__news-preview p {
-  margin: 2.5rem;
-  padding: 2.5rem;
-  font-size: 2.0rem;
-}

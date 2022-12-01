@@ -84,7 +84,6 @@ a {
 }
 
 .header_nav li {
-  list-style: none;
   display: inline-flex;
   margin: 0 2.5rem;
   padding: 10px;
@@ -92,31 +91,17 @@ a {
 
 .header_nav a {
   color: #527F85;
-  text-decoration: none;
 }
 
-.footer__contact {
-  text-decoration: none;
-}
-
-.section__footer-block {
+.section__footer-block,
+.footer__text {
   display: flex;
-  align-items: center;
-  align-content: center;
   justify-content: space-between;
   padding: 0.5rem;
 }
 
-.footer__block {
-  display: flex;
-}
-
 .footer__text-size {
   padding: 0.5rem 1rem;
-}
-
-.footer__text {
-  display: flex;
 }
 
 .footer__button {
@@ -140,7 +125,6 @@ a {
 
 .footer__button-button a {
   color: #21768A;
-  text-decoration: none;
 }
 
 .section__footer-social {
@@ -194,30 +178,24 @@ a {
   border-radius: 8px;
   background-color: transparent;
   text-align: center;
-  text-decoration: none;
   margin: auto 1rem;
   padding: 1.2rem 2.5rem;
   font-size: 1.5rem;
 }
 
 .home__button a {
-  text-decoration: none;
   color: white;
 }
 
-.home__news {
-  margin: 2.5rem;
-  padding: 2.5rem;
-}
-
-.home__news-title {
-  font-size: 3.5rem;
-}
-
+.home__news,
 .home__news-preview p {
   margin: 2.5rem;
   padding: 2.5rem;
   font-size: 2rem;
+}
+
+.home__news-title {
+  font-size: 3.5rem;
 }
 
 .contact__us {
@@ -233,9 +211,11 @@ a {
   font-size: 1.8rem;
 }
 
-.contact__us-locations {
+.contact__us-locations,
+.contact_names {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .contact__us-locations-text {
@@ -266,6 +246,8 @@ a {
 }
 
 #contact h3 {
+  margin-left: 1rem;
+  font-weight: 700;
   margin-bottom: 2.5rem;
 }
 
@@ -278,21 +260,18 @@ a {
   box-sizing: unset;
 }
 
-.contact_form {
+.contact_form,
+.contact__form-button {
   margin: 1rem;
+}
+.contact_form button,
+.contact__form-button button {
+  padding: 0.9rem 3.3rem;
+  margin: auto;
 }
 
 .contact__form-org input, textarea {
   width: 381px;
-}
-
-.contact__form-button {
-  padding: 1rem;
-}
-
-.contact__form-button button {
-  padding: 0.9rem 3.3rem;
-  margin: auto;
 }
 
 #button__contact {
@@ -306,7 +285,7 @@ a {
   height: 28px;
 }
 
-.contact__width input {
+.contact__width input input {
   width: 180px;
 }
 
@@ -315,17 +294,6 @@ a {
   font-style: italic;
   padding: 10px;
   margin: 10px;
-}
-
-.contact h3 {
-  align-items: left;
-  margin-left: 1rem;
-  font-weight: 700;
-}
-
-.contact_names {
-  display: flex;
-  justify-content: space-between;
 }
 
 .services__section-div {
@@ -461,9 +429,6 @@ a {
   .footer__logo-img {
     width: 108px;
   }
-  .footer__button-button {
-    font-size: 1.5rem;
-  }
 }
 @media screen and (max-width: 768px) {
   .banner__images-title {
@@ -552,7 +517,6 @@ a {
   .header_nav a {
     color: #78C2E9;
     padding: 14px 16px;
-    text-decoration: none;
     font-size: 17px;
     display: block;
   }

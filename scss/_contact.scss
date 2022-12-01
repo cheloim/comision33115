@@ -11,9 +11,11 @@
   font-size: 1.8rem;
 }
 
-.contact__us-locations {
+.contact__us-locations,
+.contact_names {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .contact__us-locations-text {
@@ -44,6 +46,8 @@
 }
 
 #contact h3 {
+  margin-left: 1rem;
+  font-weight: 700;
   margin-bottom: 2.5rem;
 }
 
@@ -56,21 +60,17 @@
   box-sizing: unset;
 }
 
-.contact_form {
+.contact_form,
+.contact__form-button {
   margin: 1rem;
+  button {
+        padding: 0.9rem 3.3rem;
+        margin: auto;
+  }
 }
 
 .contact__form-org input, textarea {
   width: 381px;
-}
-
-.contact__form-button {
-  padding: 1rem;
-}
-
-.contact__form-button button {
-  padding: 0.9rem 3.3rem;
-  margin: auto;
 }
 
 #button__contact {
@@ -80,12 +80,16 @@
   border-radius: 8px;
 }
 
-.contact__height input {
-  height: 28px;
+.contact__height {
+  input  {
+        height: 28px;
+  }
 }
 
 .contact__width input {
-  width: 180px
+  input  {
+    width: 180px
+  }
 }
 
 .contact__placeholder::placeholder {
@@ -95,13 +99,3 @@
   margin: 10px;
 }
 
-.contact h3 {
-  align-items: left;
-  margin-left: 1rem;
-  font-weight: 700;
-}
-
-.contact_names {
-  display: flex;
-  justify-content: space-between;
-}
